@@ -70,7 +70,7 @@
     }
 
     .price_comp_text{
-        margin: 30px;
+        margin: 30px 0;
     }
 
     .price_comp_img1{
@@ -96,7 +96,7 @@
     }
 
     .price_comp_text{
-        margin: 60px;
+        margin: 60px 0;
     }
 
     .price_comp_img1{
@@ -109,6 +109,7 @@
 
 @media (max-width:692px){
     .price_comp_text{
-        font-size: 3.967vw;
+        font-size: 4.7vw;
       }
 }
+
