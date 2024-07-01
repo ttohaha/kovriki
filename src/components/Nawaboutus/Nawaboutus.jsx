@@ -1,4 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
 import './Nawaboutus.css'
 import img_picAvtor from '../../img/picAvtor.png'
@@ -9,6 +13,35 @@ import img_backNav from '../../img/backheader.JPG'
 
 
 function Nawaboutus() {
+  gsap.registerPlugin(useGSAP,ScrollTrigger);
+
+useEffect(()=>{
+  gsap.fromTo(['.nawaboutus_center_text', '.nawaboutus_mobileimg_container'], {opacity:0,y:-5,duration:0},{
+    opacity:1,
+    y:0,
+    duration:0.75,
+    scrollTrigger:{
+      trigger:'.navbar',
+    }
+  })
+
+  gsap.fromTo('.nawaboutus_img_4', {duration:0,rotation:0},{
+    rotation:-29,
+    duration:0.4,
+    scrollTrigger:{
+      trigger:'.navbar',
+    }
+  })
+
+  gsap.fromTo('.nawaboutus_img_1', {duration:0,rotation:0},{
+    rotation:29,
+    duration:0.6,
+    scrollTrigger:{
+      trigger:'.navbar',
+    }
+  })
+},[])
+
   return (
     <div className="nawaboutus">
         <img src={img_backNav} alt="" className="nawaboutus_back" />

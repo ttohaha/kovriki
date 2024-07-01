@@ -1,21 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
     margin: 0;
     padding: 0;
@@ -35,4 +17,14 @@ ul {
     /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
     /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.App{
+    display: block;
+}
+
+.navbar{
+    position: sticky;
+    top:-80px;
+    z-index: -1;
 }
