@@ -1,5 +1,6 @@
 .navname{
-    /* background-color: #7f42e1; */
+    background: rgb(139,85,225);
+background: linear-gradient(0deg, rgba(139,85,225,1) 0%, rgba(132,71,231,1) 26%);
     color:#e7dbfd;
     /* font-family: TTNorms, sans-serif; */
     line-height: 30px;
