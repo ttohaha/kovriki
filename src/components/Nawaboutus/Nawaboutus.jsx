@@ -22,7 +22,8 @@ useEffect(()=>{
     duration:0.75,
     scrollTrigger:{
       trigger:'.navbar',
-    }
+    },
+    
   })
 
   gsap.fromTo('.nawaboutus_img_4', {duration:0,rotation:0},{

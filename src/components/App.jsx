@@ -14,6 +14,20 @@ function App() {
         <Nawaboutus/>
       </div>
       <Price/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+      <Navname/>
+
     </div>
   );
 }
