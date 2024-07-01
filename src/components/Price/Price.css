@@ -92,8 +92,8 @@
     }
 
     .price_comp_text{
-      font-size: 4.2vw;
-    }
+        font-size: 4vw;
+      }
 
     .price_comp_text{
         margin: 60px 0;
@@ -105,11 +105,5 @@
     .price_comp_img2{
         width:30vw;
     }
-}
-
-@media (max-width:692px){
-    .price_comp_text{
-        font-size: 4.7vw;
-      }
 }
 
