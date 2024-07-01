@@ -1,10 +1,53 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+
 import img_girleprice1 from '../../img/girleprice1.png'
 import img_girleprice2 from '../../img/girleprice2.png'
 
 import './Price.css';
 
 function Price() {
+  gsap.registerPlugin(useGSAP,ScrollTrigger);
+
+  useEffect(()=>{
+    gsap.fromTo('.price_comp_img1', {opacity:0,y:+500},{
+      opacity:0.65,
+      y:0,
+      scrollTrigger:{
+        trigger:'.podlozka_1',
+        start:'top bottom',
+        end:'+500',
+        scrub:true,
+      }
+    })
+
+    gsap.fromTo('.price_comp_text', {opacity:0,y:+1000},{
+      opacity:0.65,
+      y:0,
+      scrollTrigger:{
+        trigger:'.podlozka_1',
+        start:'top bottom',
+        end:'+750',
+        scrub:true,
+        // markers:true
+      }
+    })
+
+    gsap.fromTo('.price_comp_img2', {opacity:0,},{
+      opacity:0.65,
+      scrollTrigger:{
+        trigger:'.podlozka_1',
+        start:'top bottom',
+        end:'+800',
+        scrub:true,
+        // markers:true
+      }
+    })
+  },[])
+
   return (
   <div className="podlozka_1">
     <div className='price_comp'>
