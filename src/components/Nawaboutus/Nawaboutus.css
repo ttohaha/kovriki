@@ -187,12 +187,19 @@
     }
 }
 
-@media (max-width:400px){
+@media (max-width:431px){
     .nawaboutus_img_2_mobile{
         width: 60vw;
     }
     .nawaboutus_img_1_mobile{
         width: 40vw;
         left: -15vw;
+    }
+
+    .nawaboutus{
+        height: 90vh;
+    }
+    .nawaboutus_back{
+        height: 90vh;
     }
 }
