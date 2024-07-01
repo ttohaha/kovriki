@@ -12,6 +12,18 @@ function Nawaboutus() {
   return (
     <div className="nawaboutus">
         <img src={img_backNav} alt="" className="nawaboutus_back" />
+
+        <div className="nawaboutus_mobileimg_container">
+          <div className="nawaboutus_mobileimg_container_block1">
+            <img src={img_picText} alt="" className="nawaboutus_img_1_mobile" />
+            <img src={img_picAvtor} alt="" className="nawaboutus_img_2_mobile" />
+          </div>
+          <div className="nawaboutus_mobileimg_container_block2">
+            <img src={img_pusText} alt="" className="nawaboutus_img_3_mobile" />
+            <img src={img_pusAvtor} alt="" className="nawaboutus_img_4_mobile" />
+          </div>
+        </div>
+
         <div className="nawaboutus_left nawaboutus_box">
             <img src={img_picText} alt="" className="nawaboutus_left_avt nawaboutus_img_1" />
             <img src={img_picAvtor} alt="" className="nawaboutus_left_avt nawaboutus_img_2" />

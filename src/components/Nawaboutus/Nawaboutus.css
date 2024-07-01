@@ -71,3 +71,128 @@
     bottom: 11vh;
 }
 
+.nawaboutus_mobileimg_container{
+    display: none;
+}
+
+
+@media (max-width:1178px){
+    .nawaboutus{
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+    .nawaboutus_img_2{
+        width:13vw;
+        top: 7vh;
+
+    }
+    .nawaboutus_img_3{
+        width:13vw;
+    }
+}
+
+@media (max-width:780px){
+    .nawaboutus{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .nawaboutus_img_2_mobile{
+        width: 26.5vw;
+    }
+    .nawaboutus_img_4_mobile{
+        width: 26.5vw;
+    }
+
+    .nawaboutus_img_1_mobile{
+        width: 26vw;
+        transform: rotate(-45deg);
+        position: absolute;
+        left:-8vw;
+        top:-2vw;
+
+    }
+    .nawaboutus_img_3_mobile{
+        width: 26vw;
+        transform: rotate(-45deg);
+        position: absolute;
+        left:-8vw;
+        top:2vw;
+    }
+    
+    .nawaboutus_left{
+        display: none;
+    }
+    .nawaboutus_right{
+        display: none;
+    }
+    .nawaboutus_mobileimg_container{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .nawaboutus_mobileimg_container_block1{
+        position: relative;
+    }
+    .nawaboutus_mobileimg_container_block2{
+        position: relative;
+    }
+
+    .nawaboutus_center{
+        margin: 0 10vw;
+    }
+}
+
+@media (max-width:646px){
+    .nawaboutus{
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .nawaboutus_img_2_mobile{
+        width: 35vw;
+    }
+    .nawaboutus_img_4_mobile{
+        width: 35vw;
+    }
+    
+    .nawaboutus_center_text{
+        font-size:25px;
+    }
+
+    .nawaboutus_mobileimg_container_block2{
+        display: none;
+    }
+
+    .nawaboutus_img_2_mobile{
+        width: 40vw;
+    }
+    /* .nawaboutus_mobileimg_container{
+        transform: translateY(8vh)
+    } */
+}
+
+@media (max-width:548px){
+    .nawaboutus_center_text{
+        font-size:23px;
+    }
+}
+
+@media (max-width:500px){
+    .nawaboutus_img_2_mobile{
+        width: 50vw;
+    }
+    .nawaboutus_center_text{
+        font-size:20px;
+    }
+}
+
+@media (max-width:400px){
+    .nawaboutus_img_2_mobile{
+        width: 60vw;
+    }
+    .nawaboutus_img_1_mobile{
+        width: 40vw;
+        left: -15vw;
+    }
+}
