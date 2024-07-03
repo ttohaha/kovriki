@@ -46,6 +46,40 @@ function Price() {
         // markers:true
       }
     })
+
+    gsap.fromTo('.price_comp_img1', {opacity:0.65,y:0},{
+      opacity:0,
+      y:-200,
+      scrollTrigger:{
+        trigger:'.cdek',
+        start:'center bottom',
+        end:'bottom',
+        scrub:true,
+      }
+    })
+
+    gsap.fromTo('.price_comp_text', {opacity:0.65,y:0},{
+      opacity:0,
+      y:-450,
+      scrollTrigger:{
+        trigger:'.cdek',
+        start:'center bottom',
+        end:'bottom',
+        scrub:true,
+      }
+    })
+
+    gsap.fromTo('.price_comp_img2', {opacity:0.65,y:0},{
+      opacity:0.65,
+      y:-300,
+      scrollTrigger:{
+        trigger:'.cdek',
+        start:'center bottom',
+        end:'bottom',
+        scrub:true,
+      }
+    })
+
   },[])
 
   return (

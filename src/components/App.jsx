@@ -19,6 +19,7 @@ function App() {
       <Nav2aboutus/>
       <Price/>
       <Cdek/>
+
     </div>
   );
 }
