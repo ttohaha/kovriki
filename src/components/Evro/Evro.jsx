@@ -19,29 +19,30 @@ function Evro() {
     gsap.registerPlugin(useGSAP,ScrollTrigger);
 
     useEffect(()=>{
-        gsap.fromTo('.evro_img_cover', {opacity:0,y:+500},{
+        gsap.fromTo('.evro_img_cover', {opacity:0,y:+100},{
           opacity:1,
           y:0,
           scrollTrigger:{
             trigger:'.podlozka_evro',
             start:'top bottom',
-            end:'+1900',
+            end:'top +450',
             scrub:true,
           }
         })
 
-        gsap.fromTo('.evro_img_pictire', {opacity:0,y:+700},{
+        gsap.fromTo('.evro_img_pictire', {opacity:0,y:+200},{
             opacity:1,
             y:0,
             scrollTrigger:{
               trigger:'.podlozka_evro',
               start:'top bottom',
-              end:'+2000',
+              end:'top center',
               scrub:true,
+            
             }
           })
           
-        gsap.fromTo('.evro_text', {opacity:0,y:+700},{
+        gsap.fromTo('.evro_text', {opacity:0,y:+300},{
             opacity:1,
             y:0,
             scrollTrigger:{
@@ -53,22 +54,13 @@ function Evro() {
           }
         })
 
-        gsap.fromTo('.evro_img_car', {opacity:0,},{
+        gsap.fromTo('.evro_img_car', {opacity:0,y:+50},{
+            y:0,
             opacity:1,
             scrollTrigger:{
             trigger:'.podlozka_evro',
             start:'top center',
             end:'top center',
-            scrub:true,
-          }
-        })
-
-        gsap.fromTo('.evro_img_cover_mobile', {opacity:0,},{
-            opacity:1,
-            scrollTrigger:{
-            trigger:'.podlozka_evro',
-            start:'top center',
-            end:'+2180',
             scrub:true,
           }
         })
