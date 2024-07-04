@@ -69,9 +69,9 @@ function Price() {
       }
     })
 
-    gsap.fromTo('.price_comp_img2', {opacity:0.65,y:0},{
-      opacity:0.65,
-      y:-300,
+    gsap.fromTo('.price_comp_img2', {opacity:0.65,},{
+      opacity:0,
+      // y:-300,
       scrollTrigger:{
         trigger:'.cdek',
         start:'center bottom',
