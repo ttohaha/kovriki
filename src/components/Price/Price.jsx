@@ -66,6 +66,7 @@ function Price() {
         start:'center bottom',
         end:'bottom',
         scrub:true,
+        murkers:true
       }
     })
 

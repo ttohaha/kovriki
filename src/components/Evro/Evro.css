@@ -1,0 +1,167 @@
+.podlozka_evro{
+    position: sticky;
+  background-color: #e7dbfd;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  top: -20px;
+  z-index: -97;
+
+  
+}
+
+.evro{ 
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+
+.evro_bg{
+    opacity: 0.3;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+      position: absolute;
+      z-index: -2;
+        top:0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+  }
+
+.evro_img_cover{
+    width: 15vw;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.evro_img_car{
+    width: 18vw;
+    position: absolute;
+    bottom:0;
+    right:20vw;
+}
+
+.evro_imgtext{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.evro_img_pictire{
+    width: 35vw;
+}
+
+.evro_text{
+    color: #7f42e1;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vw;
+    line-height: 2;
+}
+
+.evro_img_cover_mobile{
+    display: none;
+}
+
+@media (max-width:1100px){
+    .evro_img_car{
+        width: 25vw;
+    }
+
+    .evro_img_cover{
+        width: 22vw;
+    }
+
+    .evro_img_pictire{
+        width: 40vw;
+    }
+}
+
+@media (max-width:900px){
+    .evro_img_car{
+        width: 30vw;
+        right:10vw;
+
+    }
+
+    .evro_img_cover{
+        width: 26vw;
+    }
+
+    .evro_img_pictire{
+        width: 40vw;
+    }
+}
+
+@media (max-width:750px){
+    .evro_imgtext{
+        display: grid;
+        grid-template-rows: 5fr 3fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .evro_img_car{
+        width: 30vw;
+        right:10vw;
+        display: none;
+    }
+
+    .evro_img_cover{
+        /* opacity: 0.3;
+        width: 26vw;
+        top:auto;
+        bottom:10px;
+        right:10px; */
+        display: none;
+    }
+
+    .evro_text{
+        font-size: 3vw;
+    }
+
+    .evro_img_pictire{
+        width: 55vw;
+    }
+}
+
+@media (max-width:560px){
+    .evro_imgtext{
+        display: grid;
+        grid-template-rows: 5fr 3fr 2fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .evro_text{
+        font-size: 3.7vw;
+    }
+    
+    .evro_img_cover_mobile{
+        display: block;
+        width: 30vw;
+    }
+    
+}
+
+@media (max-width:445px){
+    .evro_imgtext{
+        grid-template-rows: 4fr 4fr 2fr;
+    }
+}
+
+@media screen and (min-height:843px) and (max-width:550px){
+    .evro_img_cover_mobile{
+        display: block;
+        width: 40vw;
+    }
+
+    .evro_img_pictire{
+        width: 70vw;
+    }
+}

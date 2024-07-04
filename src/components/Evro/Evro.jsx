@@ -1,0 +1,97 @@
+import React, {useEffect} from 'react'
+
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+
+// import img_evro_bg1 from '../../img/evro_bg1.JPG'
+// import img_evro_bg2 from '../../img/evro_bg2.JPG'
+// import img_evro_bg3 from '../../img/evro_bg3.JPG'
+import img_evro_bg4 from '../../img/evro_bg4.JPG'
+import img_evro_pictire from '../../img/evro_pictire.png'
+import img_evro_cover from '../../img/evro_cover.png'
+import img_evro_car from '../../img/evro_car.png'
+
+
+import './Evro.css'
+
+function Evro() {
+    gsap.registerPlugin(useGSAP,ScrollTrigger);
+
+    useEffect(()=>{
+        gsap.fromTo('.evro_img_cover', {opacity:0,y:+500},{
+          opacity:1,
+          y:0,
+          scrollTrigger:{
+            trigger:'.podlozka_evro',
+            start:'top bottom',
+            end:'+1900',
+            scrub:true,
+          }
+        })
+
+        gsap.fromTo('.evro_img_pictire', {opacity:0,y:+700},{
+            opacity:1,
+            y:0,
+            scrollTrigger:{
+              trigger:'.podlozka_evro',
+              start:'top bottom',
+              end:'+2000',
+              scrub:true,
+            }
+          })
+          
+        gsap.fromTo('.evro_text', {opacity:0,y:+700},{
+            opacity:1,
+            y:0,
+            scrollTrigger:{
+            trigger:'.podlozka_evro',
+            start:'top bottom',
+            end:'center center',
+            scrub:true,
+            // markers:true
+          }
+        })
+
+        gsap.fromTo('.evro_img_car', {opacity:0,},{
+            opacity:1,
+            scrollTrigger:{
+            trigger:'.podlozka_evro',
+            start:'top center',
+            end:'top center',
+            scrub:true,
+          }
+        })
+
+        gsap.fromTo('.evro_img_cover_mobile', {opacity:0,},{
+            opacity:1,
+            scrollTrigger:{
+            trigger:'.podlozka_evro',
+            start:'top center',
+            end:'+2180',
+            scrub:true,
+          }
+        })
+      },[])
+
+  return (
+    <div className="podlozka_evro">
+        <div className="evro">
+            <div className="evro_main">
+                <div className="evro_imgtext">
+                    <img src={img_evro_pictire} alt="" className="evro_img_pictire" />
+                    <div className="evro_text">Мы можем печатать вот так или эдак. <br/>Мы 20 лет в теме и нет лучше нас.<br/>Везем из Европы (в обход всех разведок)<br/>Мы все материалы - чтоб радовать вас.</div>
+                    <img src={img_evro_cover} alt="" className="evro_img_cover_mobile" />
+                
+                </div>
+            </div>
+            {/* img. */}
+            <img src={img_evro_bg4} alt="" className="evro_bg" />
+            <img src={img_evro_cover} alt="" className="evro_img_cover" />
+            <img src={img_evro_car} alt="" className="evro_img_car" />
+        </div>
+    </div>
+  )
+}
+
+export default Evro
