@@ -84,7 +84,9 @@ function Cdek() {
             <img src={img_cdek_car} alt="" className="cdek_doroga_car" />
           </div>
 
-          <div className='cdek_text'>Стандарт - это круг или прямоугольник.<br/>Мы сделаем быстро, за день или два.<br/> Отправим их сдэком, все будут довольны...<br/> Лишь скинь нам по счету оплату сперва.</div>
+          <div className="cdek_text_block">
+            <div className='cdek_text'>Стандарт - это круг или прямоугольник.<br/>Мы сделаем быстро, за день или два.<br/> Отправим их сдэком, все будут довольны...<br/> Лишь скинь нам по счету оплату сперва.</div>
+          </div>
 
           <div className="cdek_kovri">
             <img src={img_ihcover_cdek1} alt="" className="cdek_kovri_img1 cdek_kovri_img" />
