@@ -54,9 +54,10 @@
 
 .cdek_text{
   height: 50vh;
-  font-family: "Kurale", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Ysabeau Office", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
   color: white;
   font-size: 2.7vw;
   display: flex;
