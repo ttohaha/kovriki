@@ -67,6 +67,7 @@ function Evro() {
       },[])
 
   return (
+    <div className="evro_zzz">
     <div className="podlozka_evro">
         <div className="evro">
             <div className="evro_main">
@@ -83,6 +84,8 @@ function Evro() {
             <img src={img_evro_car} alt="" className="evro_img_car" />
         </div>
     </div>
+    </div>
+    
   )
 }
 
