@@ -7,6 +7,7 @@ import Nav2aboutus from './Nav2aboutus/Nav2aboutus';
 import Price from './Price/Price';
 import Cdek from './Cdek/Cdek';
 import Evro from './Evro/Evro';
+import Expi from './Expi/Expi';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Price/>
       <Cdek/>
       <Evro/>
+      <Expi/>
     </div>
   );
 }
