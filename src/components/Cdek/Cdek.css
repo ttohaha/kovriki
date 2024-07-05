@@ -194,9 +194,16 @@
     position: static;
   }
 
-  .cdek_text{
-    height: 25vh;
-  }
+.cdek_text_block{
+  height: 25vh;
+}
+
+.cdek_text{
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 
 /* # */
