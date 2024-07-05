@@ -64,6 +64,78 @@ function Evro() {
             scrub:true,
           }
         })
+
+        gsap.fromTo('.evro_img_pictire', {opacity:1,y:0},{
+          y:-100,
+          opacity:0,
+          scrollTrigger:{
+          trigger:'.podlozka_expi',
+          start:'top +150',
+          end:'top top',
+          scrub:true,
+          // markers:true
+        }
+      })
+
+      gsap.fromTo('.evro_img_cover', {opacity:1,y:0},{
+        y:-50,
+        opacity:0,
+        scrollTrigger:{
+        trigger:'.podlozka_expi',
+        start:'top +125',
+        end:'top top',
+        scrub:true,
+        // markers:true
+      }
+    })
+
+    gsap.fromTo('.evro_text', {opacity:1,y:0},{
+      y:-150,
+      opacity:0,
+      scrollTrigger:{
+      trigger:'.podlozka_expi',
+      start:'top +250',
+      end:'top top',
+      scrub:true,
+      // markers:true
+    }
+  })
+
+  gsap.fromTo('.evro_img_car', {opacity:1,y:0},{
+    y:-50,
+    opacity:0,
+    scrollTrigger:{
+    trigger:'.podlozka_expi',
+    start:'top bottom',
+    end:'top top',
+    scrub:true,
+    // markers:true
+  }
+})
+
+gsap.fromTo('.evro_img_cover_mobile', {opacity:1,y:0},{
+  y:-50,
+  opacity:0,
+  scrollTrigger:{
+  trigger:'.podlozka_expi',
+  start:'top bottom',
+    end:'top top',
+  scrub:true,
+  // markers:true
+}
+})
+
+gsap.fromTo('.evro_text_mobile', {opacity:1,y:0},{
+  y:-75,
+  opacity:0,
+  scrollTrigger:{
+  trigger:'.podlozka_expi',
+  start:'top +500',
+    end:'top top',
+  scrub:true,
+  // markers:true
+}
+})
       },[])
 
   return (
@@ -74,6 +146,7 @@ function Evro() {
                 <div className="evro_imgtext">
                     <img src={img_evro_pictire} alt="" className="evro_img_pictire" />
                     <div className="evro_text">Мы можем печатать вот так или эдак. <br/>Мы 20 лет в теме и нет лучше нас.<br/>Везем из Европы (в обход всех разведок)<br/>Мы все материалы - чтоб радовать вас.</div>
+                    <div className="evro_text_mobile">Мы можем печатать вот так или эдак. <br/>Мы 20 лет в теме и нет лучше нас.<br/>Везем из Европы (в обход всех разведок)<br/>Мы все материалы - чтоб радовать вас.</div>
                     <img src={img_evro_cover} alt="" className="evro_img_cover_mobile" />
                 
                 </div>

@@ -1,4 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
 import img_bg_expi1 from '../../img/bg_expi1.JPG'
 import img_bg_expi2 from '../../img/bg_expi2.JPG'
@@ -9,6 +13,22 @@ import img_expi_picture from '../../img/expi_picture.JPG'
 import './Expi.css'
 
 function Expi() {
+  gsap.registerPlugin(useGSAP,ScrollTrigger);
+
+  // useEffect(()=>{
+  //   gsap.fromTo('.evro_img_car', {opacity:0,y:+50},{
+  //     y:0,
+  //     opacity:1,
+  //     scrollTrigger:{
+  //       trigger:'.podlozka_evro',
+  //       start:'top center',
+  //       end:'top center',
+  //       scrub:true,
+  //     }
+  //   })
+  // },[])
+
+
   return (
     <div className="podlozka_expi">
         <div className="expi">

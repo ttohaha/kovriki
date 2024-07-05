@@ -73,6 +73,10 @@
     line-height: 2;
 }
 
+.evro_text_mobile{
+    display: none;
+}
+
 .evro_img_cover_mobile{
     display: none;
 }
@@ -131,7 +135,18 @@
     }
 
     .evro_text{
+        display: none;
+    }
+
+    .evro_text_mobile{
+        display: block;
         font-size: 3vw;
+        color: #7f42e1;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 2;
     }
 
     .evro_img_pictire{
@@ -147,7 +162,7 @@
         align-items: center;
     }
 
-    .evro_text{
+    .evro_text_mobile{
         font-size: 3.7vw;
     }
     
