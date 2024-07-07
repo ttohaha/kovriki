@@ -1,0 +1,153 @@
+.podlozka_call{
+    position: sticky;
+    top: -20px;
+    z-index: -96;
+    background-color: #e7dbfd;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+.call{
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+
+.bg_call{
+    opacity: 0.2;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    position: absolute;
+    z-index: -2;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.call_main{
+  width:100%;
+  height:100vh;
+}
+
+.call_text{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.call_text_flex{
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #7936e3;
+  /* color: white; */
+  font-size: 3.8vw;
+}
+
+.call_cover_img{
+    width: 20vw;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+    bottom: 1vw;
+    left: 2vw;
+}
+.call_men_img{
+    width: 30vw;
+    opacity: 0.45;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+.call_women_img{
+    width: 25vw;
+    opacity: 0.45;
+    position: absolute;
+    z-index: -1;
+    top: 1vw;
+    left: 2vw;
+}
+
+.call_men_img_mobile{
+    display: none;
+}
+
+.call_women_img_mobile{
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    .call_text_flex{
+        font-size: 4.5vw;
+    }
+
+    .call_men_img{
+        width: 35vw;
+    }
+
+    .call_women_img{
+        width: 35vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .call_men_img{
+        display: none;
+    }
+
+    .call_women_img{
+        display: none;
+    }
+
+    .call_men_img_mobile{
+        display: block;
+        width: 35vw;
+    }
+    .call_women_img_mobile{
+        display: block;
+        width: 35vw;
+        margin-top: 30px;
+    }
+
+    .call_text{
+        width: 100%;
+        height: auto;
+    }
+
+    .call_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px) {
+    .call_men_img_mobile{
+        width: 40vw;
+    }
+    .call_women_img_mobile{
+        width: 40vw;
+        margin-top: 50px;
+    }
+
+    .call_text_flex{
+        font-size: 4.8vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .call_women_img_mobile{
+        width: 55vw;
+    }
+
+    .call_men_img_mobile{
+        width: 55vw;
+    }
+}
