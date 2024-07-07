@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   display: block;
-  position: static;
+  position: relative;
   z-index: 1;
   background: #e7dbfd;
   border-top-left-radius: 24px;
@@ -13,19 +13,29 @@
   font-style: normal;
   font-size: 30px;
   line-height: 1.5;
-  background-image: radial-gradient(
-    rgba(146, 89, 211, 0.16) 2px,
-    transparent 0
-  );
   background-size: 30px 30px;
   background-position: -5px -5px;
 }
 
 .podlozka_1 {
-  background-color: #8d5be0;
+  /* background-color: #8d5be0; */
   position: sticky;
   top: -20px;
   z-index: -98;
+}
+
+.bg_price{
+  opacity: 0.2;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    position: absolute;
+    z-index: -200;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 .price_comp_text {
@@ -49,7 +59,7 @@
   top: 2vw;
   left: 2vw;
   z-index: -99;
-  opacity: 0.65;
+  opacity: 0.4;
 }
 
 .price_comp_img2 {
@@ -58,7 +68,7 @@
   position: absolute;
   bottom: 0vw;
   right: 2vw;
-  opacity: 0.65;
+  /* opacity: 1; */
   z-index: -99;
 }
 
