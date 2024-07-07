@@ -39,10 +39,10 @@
 }
 
 .price_comp_text {
-  font-family: "Pacifico", cursive;
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.5vw;
+  font-size: 4.3vw;
 }
 
 .price_comp {
@@ -59,7 +59,7 @@
   top: 2vw;
   left: 2vw;
   z-index: -99;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .price_comp_img2 {
@@ -103,11 +103,13 @@
     grid-template-rows: 3fr 3fr 1fr;
     align-items: center;
     justify-items: center;
-    padding-top: 35px;
+
+    /* height: 100vw; */
   }
 
   .price_comp_text {
-    font-size: 4vw;
+    font-size: 5vw;
+    margin: 0;
   }
 
   .price_comp_text {
@@ -121,6 +123,8 @@
     width: 30vw;
   }
 }
+
+/* @media screen and (max-width: 420vw)
 
 @media screen and (min-height: 769px) and (max-width: 850px) {
   .price_comp_img1 {
@@ -147,4 +151,4 @@
   .price_comp_img2 {
     width: 50vw;
   }
-}
+} */
