@@ -9,7 +9,7 @@ import img_picAvtor from '../../img2/picAvtor.png'
 import img_picText from '../../img/picText.png'
 import img_pusAvtor from '../../img2/pusAvtor.png'
 import img_pusText from '../../img/pusText.png'
-import img_backNav from '../../img/backheader.JPG'
+import img_backNav from '../../img2/backheader.JPG'
 import img_nav2img from '../../img/nav2img.JPG'
 
 
