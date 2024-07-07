@@ -5,72 +5,37 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
 import './Nawaboutus.css'
-import img_picAvtor from '../../img/picAvtor.png'
+import img_picAvtor from '../../img2/picAvtor.png'
 import img_picText from '../../img/picText.png'
-import img_pusAvtor from '../../img/pusAvtor.png'
+import img_pusAvtor from '../../img2/pusAvtor.png'
 import img_pusText from '../../img/pusText.png'
 import img_backNav from '../../img/backheader.JPG'
+import img_nav2img from '../../img/nav2img.JPG'
 
 
 function Nawaboutus() {
   gsap.registerPlugin(useGSAP,ScrollTrigger);
 
-useEffect(()=>{
-  gsap.fromTo(['.nawaboutus_center_text', '.nawaboutus_mobileimg_container'], {opacity:0,y:-5,duration:0},{
-    opacity:1,
-    y:0,
-    duration:0.75,
-    scrollTrigger:{
-      trigger:'.navbar',
-    },
-    
-  })
-
-  gsap.fromTo('.nawaboutus_img_4', {duration:0,rotation:0},{
-    rotation:-29,
-    duration:0.4,
-    scrollTrigger:{
-      trigger:'.navbar',
-    }
-  })
-
-  gsap.fromTo('.nawaboutus_img_1', {duration:0,rotation:0},{
-    rotation:29,
-    duration:0.6,
-    scrollTrigger:{
-      trigger:'.navbar',
-    }
-  })
-},[])
-
   return (
     <div className="nawaboutus">
+
+        <div className="nawaboutus_kartinas1 nawaboutus_kartinas">
+          <img src={img_pusAvtor} alt="" className="nawaboutus_pusAvtor" />
+          <img src={img_pusText} alt="" className="nawaboutus_pusText" />
+        </div>
+        
+        <div className="nawaboutus_text_box">
+            <div className="nawaboutus_text">Нет лучше подарка, чем коврик для мыши!<br/> Реклама на нем всегда под рукой.<br/> Как Пушкин придумаем, как Пикассо напишем-<br/> никто вам не сделает коврик такой!</div>
+        </div>
+
+        <div className="nawaboutus_kartinas2 nawaboutus_kartinas">
+          <img src={img_picAvtor} alt="" className="nawaboutus_picAvtor" />
+          <img src={img_picText} alt="" className="nawaboutus_picText" />
+        </div>
+
+        <img src={img_nav2img} alt="" className="nawaboutus_piture" />
+
         <img src={img_backNav} alt="" className="nawaboutus_back" />
-
-        <div className="nawaboutus_mobileimg_container">
-          <div className="nawaboutus_mobileimg_container_block1">
-            <img src={img_picText} alt="" className="nawaboutus_img_1_mobile" />
-            <img src={img_picAvtor} alt="" className="nawaboutus_img_2_mobile" />
-          </div>
-          <div className="nawaboutus_mobileimg_container_block2">
-            <img src={img_pusText} alt="" className="nawaboutus_img_3_mobile" />
-            <img src={img_pusAvtor} alt="" className="nawaboutus_img_4_mobile" />
-          </div>
-        </div>
-
-        <div className="nawaboutus_left nawaboutus_box">
-            <img src={img_picText} alt="" className="nawaboutus_left_avt nawaboutus_img_1" />
-            <img src={img_picAvtor} alt="" className="nawaboutus_left_avt nawaboutus_img_2" />
-        </div>
-
-        <div className="nawaboutus_center nawaboutus_box">
-            <div className="nawaboutus_center_text">Нет лучше подарка, чем коврик для мыши! Реклама на нем всегда под рукой. Как Пушкин придумаем, как Пикассо напишем - никто вам не сделает коврик такой!</div>
-        </div>
-
-        <div className="nawaboutus_right nawaboutus_box">
-            <img src={img_pusAvtor} alt="" className="nawaboutus_left_avt nawaboutus_img_3" />
-            <img src={img_pusText} alt="" className="nawaboutus_left_avt nawaboutus_img_4" />
-        </div>
     </div>
   )
 }

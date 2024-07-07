@@ -2,204 +2,199 @@
     background-color: #7f42e1;
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    position: relative;
+    z-index: -102;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nawaboutus_back{
     opacity: 0.2;
     position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
     width: 100%;
     height: 100vh;
     object-fit: cover;
     object-position: center;
 }
 
-.nawaboutus_box{
+
+.nawaboutus_text_box{
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-
-}
-
-.nawaboutus_center_text{
-    color: #e7dbfd;
-    font-family: "LXGW WenKai Mono TC", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 1.5;
-}
-
-.nawaboutus_left{
-    position: relative;
-}
-
-.nawaboutus_right{
-    position: relative;
-}
-
-.nawaboutus_img_1{
-    width: 250px;
+    bottom: 0;
     position: absolute;
-    display: block;
-    transform: rotate(29deg);
-    bottom: 14vh;
-    left: 11vw;
+    bottom: 52vh;
 }
 
-.nawaboutus_img_4{
-    width:250px;
+.nawaboutus_text{
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  color:#e7dbfd;
+  position: absolute;
+}
+
+.nawaboutus_pusAvtor{
+    width: 15vw;
+}
+.nawaboutus_pusText{
+    width: 10vw;
+}
+
+.nawaboutus_picAvtor{
+    width: 15vw;
+}
+.nawaboutus_picText{
+    width: 10vw;
+}
+.nawaboutus_kartinas2{
     position: absolute;
-    display: block;
-    transform: rotate(331deg);
-    top: 8vh;
-    right: 13vw;
+    top:2vw;
+    right: 2vw;
 }
-
-.nawaboutus_img_2{
+.nawaboutus_kartinas1{
     position: absolute;
-    display: block;
-    top: 11vh;
-    /* right: 3vw; */
+    top:2vw;
+    left: 2vw;
 }
 
-.nawaboutus_img_3{
+.nawaboutus_kartinas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nawaboutus_cart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+.nawaboutus_piture{
     position: absolute;
+    bottom: 2vh;
     display: block;
-    bottom: 11vh;
+        width: 90vw;
+        height: 8vw;
+        object-fit: cover;
+        object-position: center;
 }
 
-.nawaboutus_mobileimg_container{
-    display: none;
-}
-
-
-@media (max-width:1178px){
-    .nawaboutus{
-        grid-template-columns: 1fr 4fr 1fr;
+@media (max-width:1150px){
+    .nawaboutus_pusAvtor{
+        width: 18vw;
     }
-    .nawaboutus_img_2{
-        width:13vw;
-        top: 7vh;
-
-    }
-    .nawaboutus_img_3{
-        width:13vw;
-    }
-}
-
-@media (max-width:780px){
-    .nawaboutus{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .nawaboutus_img_2_mobile{
-        width: 26.5vw;
-    }
-    .nawaboutus_img_4_mobile{
-        width: 26.5vw;
-    }
-
-    .nawaboutus_img_1_mobile{
-        width: 26vw;
-        transform: rotate(-45deg);
-        position: absolute;
-        left:-8vw;
-        top:-2vw;
-
-    }
-    .nawaboutus_img_3_mobile{
-        width: 26vw;
-        transform: rotate(-45deg);
-        position: absolute;
-        left:-8vw;
-        top:2vw;
+    .nawaboutus_pusText{
+        width: 15vw;
     }
     
-    .nawaboutus_left{
-        display: none;
+    .nawaboutus_picAvtor{
+        width: 18vw;
     }
-    .nawaboutus_right{
-        display: none;
-    }
-    .nawaboutus_mobileimg_container{
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly
+    .nawaboutus_picText{
+        width: 15vw;
     }
 
-    .nawaboutus_mobileimg_container_block1{
-        position: relative;
+    .nawaboutus_text{
+        font-size: 4vw;
     }
-    .nawaboutus_mobileimg_container_block2{
-        position: relative;
-    }
-
-    .nawaboutus_center{
-        margin: 0 10vw;
+    .nawaboutus_text_box{
+        bottom: 45vh;
     }
 }
 
-@media (max-width:646px){
-    .nawaboutus{
-        grid-template-rows: 2fr 1fr;
+@media (max-width:900px){
+    .nawaboutus_piture{
+        height: 18vh;
     }
 
-    .nawaboutus_img_2_mobile{
-        width: 35vw;
+    .nawaboutus_text{
+        font-size: 4.8vw;
     }
-    .nawaboutus_img_4_mobile{
+    .nawaboutus_kartinas2{
+        right: 6vw;
+    }
+    .nawaboutus_kartinas1{
+        left: 6vw;
+    }
+}
+
+@media (max-width:730px){
+    .nawaboutus_pusAvtor{
+        width: 24vw;
+    }
+    .nawaboutus_pusText{
+        width: 15vw;
+    }
+    
+    .nawaboutus_picAvtor{
+        width: 24vw;
+    }
+    .nawaboutus_picText{
+        width: 15vw;
+    }
+
+    .nawaboutus_kartinas2{
+        top: 5vw;
+    }
+    .nawaboutus_kartinas1{
+        top: 5vw;
+    }
+}
+
+@media (max-width:600px){
+    .nawaboutus_kartinas2{
+        right: 10vw;
+    }
+    .nawaboutus_kartinas1{
+        left: 10vw;
+    }
+
+    .nawaboutus_pusAvtor{
+        width: 30vw;
+    }
+    .nawaboutus_pusText{
+        width: 20vw;
+    }
+    
+    .nawaboutus_picAvtor{
+        width: 30vw;
+    }
+    .nawaboutus_picText{
+        width: 20vw;
+    }
+}
+
+@media (max-width:450px){
+    .nawaboutus_text{
+        font-size: 5.3vw;
+    }
+
+    .nawaboutus_kartinas2{
+        top: 15vw;
+    }
+    .nawaboutus_kartinas1{
+        top: 15vw;
+    }
+
+    .nawaboutus_pusAvtor{
         width: 35vw;
     }
     
-    .nawaboutus_center_text{
-        font-size:25px;
+    .nawaboutus_picAvtor{
+        width: 35vw;
     }
 
-    .nawaboutus_mobileimg_container_block2{
-        display: none;
-    }
-
-    .nawaboutus_img_2_mobile{
-        width: 40vw;
-    }
-    /* .nawaboutus_mobileimg_container{
-        transform: translateY(8vh)
-    } */
-}
-
-@media (max-width:548px){
-    .nawaboutus_center_text{
-        font-size:23px;
-    }
-}
-
-@media (max-width:500px){
-    .nawaboutus_img_2_mobile{
-        width: 50vw;
-    }
-    .nawaboutus_center_text{
-        font-size:21px;
-    }
-}
-
-@media (max-width:431px){
-    .nawaboutus_img_2_mobile{
-        width: 60vw;
-    }
-    .nawaboutus_img_1_mobile{
-        width: 40vw;
-        left: -15vw;
-    }
-
-    .nawaboutus{
-        height: 90vh;
-    }
-    .nawaboutus_back{
-        height: 90vh;
+    .nawaboutus_piture{
+        bottom: 5vh;
     }
 }
