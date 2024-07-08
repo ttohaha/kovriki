@@ -14,12 +14,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navname/> */}
+      {/* <Navname/>
+      <Nav2aboutus/> */}
       <div className="navbar">
         <Navname/>
         <Nawaboutus/>
       </div>
-      {/* <Nav2aboutus/> */}
       <Price/>
       <Cdek/>
       <Evro/>

@@ -5,10 +5,10 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
 import img_cdek_car from '../../img/cdek_car.png'
-import img_bg_cdek from '../../img/bg_sdek2.JPG'
+import img_bg_cdek from '../../img2/bg_sdek3.JPG'
 import img_cdek_cover1 from '../../img/cdek_cover1.png'
-import img_ihcover_cdek1 from '../../img/ihcover_cdek.png'
-import img_ihcover_cdek2 from '../../img/ihcover_cdek2.png'
+import img_ihcover_cdek1 from '../../img2/ihcover_cdek11.png'
+import img_ihcover_cdek2 from '../../img2/ihcover_cdek2.png'
 import img_cdek_angle from '../../img/cdek_angle.png'
 
 import './Cdek.css'
