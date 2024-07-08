@@ -4,11 +4,11 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
-import img_bg_expi1 from '../../img/bg_expi1.JPG'
-import img_bg_expi2 from '../../img/bg_expi2.JPG'
-import img_expo_img1 from '../../img/expo_img1.png'
-import img_expo_img2 from '../../img/expo_img2.png'
-import img_expi_picture from '../../img/expi_picture.JPG'
+import img_bg_expi1 from '../../img2/bg_expi.JPG'
+// import img_bg_expi2 from '../../img/bg_expi2.JPG'
+import img_expo_img1 from '../../img2/expo_img3.png'
+import img_expo_img2 from '../../img2/expo_img4.png'
+import img_expi_picture from '../../img2/evro_pictire.png'
 
 import './Expi.css'
 

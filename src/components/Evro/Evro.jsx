@@ -7,10 +7,10 @@ import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 // import img_evro_bg1 from '../../img/evro_bg1.JPG'
 // import img_evro_bg2 from '../../img/evro_bg2.JPG'
 // import img_evro_bg3 from '../../img/evro_bg3.JPG'
-import img_evro_bg4 from '../../img/evro_bg4.JPG'
-import img_evro_pictire from '../../img/evro_pictire.png'
-import img_evro_cover from '../../img/evro_cover.png'
-import img_evro_car from '../../img/evro_car.png'
+import img_evro_bg4 from '../../img2/evro_bg2.JPG'
+import img_evro_pictire from '../../img2/evro_pictire1.png'
+import img_evro_cover from '../../img2/evro_cover.png'
+import img_evro_car from '../../img2/evro_car.png'
 
 
 import './Evro.css'
