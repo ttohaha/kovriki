@@ -9,11 +9,13 @@ import Cdek from './Cdek/Cdek';
 import Evro from './Evro/Evro';
 import Expi from './Expi/Expi';
 import Call from './Call/Call';
+import Phone from './Phone/Phone';
 
 function App() {
 
   return (
     <div className="App">
+      <Phone/>
       {/* <Navname/>
       <Nav2aboutus/> */}
       <div className="navbar">
@@ -24,7 +26,7 @@ function App() {
       <Cdek/>
       <Evro/>
       <Expi/>
-      <Call/>
+      <Call/> 
     </div>
   );
 }

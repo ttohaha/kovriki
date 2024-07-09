@@ -21,6 +21,9 @@ ul {
 
 .App{
     display: block;
+    position: relative;
+    /* background-color: aquamarine; */
+    /* min-height: 200vh; */
 }
 
 .navbar{
