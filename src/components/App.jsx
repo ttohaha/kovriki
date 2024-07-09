@@ -10,6 +10,7 @@ import Evro from './Evro/Evro';
 import Expi from './Expi/Expi';
 import Call from './Call/Call';
 import Phone from './Phone/Phone';
+import Wood from './Wood/Wood';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
       <Evro/>
       <Expi/>
       <Call/> 
+      <Wood/>
+
     </div>
   );
 }

@@ -1,0 +1,134 @@
+.podlozka_wood{
+    position: sticky;
+    top: -20px;
+    z-index: -96;
+    background-color: #8d5be0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  
+  .wood{
+      width:100%;
+      height:100vh;
+      position: relative;
+  }
+  
+  .wood_bg{
+      opacity: 0.3;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      position: absolute;
+      z-index: -2;
+      top:0;
+      height: 100vh;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+  }
+  
+  .wood_main{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-direction: row-reverse; */
+  }
+  
+  .wood_picture{
+    width: 35vw;
+  }
+  
+  .wood_text{
+    color:#e7dbfd;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+      font-size: 3.5vw;
+      line-height: 1.5;
+  }
+  
+  .wood_textiscrol{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .wood_scrol{
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .wood_img{
+    /* border-radius: 20px; !!!!!!!!!!!*/
+    width: 20vw;
+  }
+  
+  @media (max-width:1000px){
+    .wood_main{
+      flex-direction: column;
+    }
+  
+    .wood_picture{
+      width: 20vw;
+    }
+  
+    .wood_textiscrol{
+      height: 66vh;
+    }
+  
+    .wood_text{
+      font-size: 4.1vw;
+    }
+  }
+  
+  
+  @media (max-width:850px){
+    .wood_text{
+      font-size: 4.5vw;
+    }
+  
+    .wood_img{
+      width: 25vw;
+    }
+  }
+  
+  @media (max-width:750px){
+    .wood_text{
+      font-size: 5.5vw;
+    }
+  
+    .wood_picture{
+      width: 25vw;
+    }
+  }
+  
+  @media (max-width:600px){
+    .wood_img{
+      width: 30vw;
+    }
+  
+    .wood_text{
+      font-size: 6vw;
+    }
+  
+    .wood_picture{
+      width: 35vw;
+    }
+  }
+  
+  @media (max-width:480px){
+    .wood_img{
+      width: 35vw;
+    }
+  
+    .wood_picture{
+      width: 45vw;
+    }
+  }
