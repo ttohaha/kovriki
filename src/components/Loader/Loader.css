@@ -1,7 +1,7 @@
 .loader_main{
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: #e7dbfd;
+    background-color: #8d5be0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@
   .loader::before {
     
     content: 'Загрузка';
-    color: #FFF;
+    color: #e7dbfd;
     font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;

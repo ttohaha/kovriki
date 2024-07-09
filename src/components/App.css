@@ -24,6 +24,9 @@ ul {
     position: relative;
     /* background-color: aquamarine; */
     /* min-height: 200vh; */
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar{
