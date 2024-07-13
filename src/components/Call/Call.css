@@ -1,7 +1,7 @@
 .podlozka_call{
     position: sticky;
     top: -20px;
-    z-index: -96;
+    z-index: 8;
     background-color: #e7dbfd;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;

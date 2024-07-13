@@ -1,14 +1,19 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, Component, useState} from 'react'
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
+import Fancybox from '../Fancybox/Fancybox';
+
+
 import img_cdek_car from '../../img/cdek_car.png'
 import img_bg_cdek from '../../img2/bg_sdek3.JPG'
 import img_cdek_cover1 from '../../img/cdek_cover1.png'
+import img_ihcover_cdek11 from '../../img2/ihcover_cdek1.png'
 import img_ihcover_cdek1 from '../../img2/ihcover_cdek11.png'
 import img_ihcover_cdek2 from '../../img2/ihcover_cdek2.png'
+import img_ihcover_cdek22 from '../../img2/ihcover_cdek2_2.png'
 import img_cdek_angle from '../../img/cdek_angle.png'
 
 import './Cdek.css'
@@ -89,8 +94,16 @@ function Cdek() {
           </div>
 
           <div className="cdek_kovri">
-            <img src={img_ihcover_cdek1} alt="" className="cdek_kovri_img1 cdek_kovri_img" />
-            <img src={img_ihcover_cdek2} alt="" className="cdek_kovri_img2 cdek_kovri_img" />
+          <Fancybox>
+            <a data-fancybox="gallery" href={img_ihcover_cdek1}>
+              <img src={img_ihcover_cdek1} alt="" className="cdek_kovri_img1 cdek_kovri_img"/>
+            </a>
+          </Fancybox>
+          <Fancybox>
+            <a data-fancybox="gallery" href={img_ihcover_cdek22}>
+              <img src={img_ihcover_cdek22} alt="" className="cdek_kovri_img2 cdek_kovri_img" />
+            </a>
+          </Fancybox>
             {/* <img src={img_cdek_cover1} alt="" className="cdek_kovri_img3" /> */}
           </div>
         </div>

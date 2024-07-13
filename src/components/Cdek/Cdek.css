@@ -1,3 +1,15 @@
+.fancybox__container {
+  --fancybox-bg: rgb(49 49 49 / 98%);
+}
+
+/* .f-button{
+  display: none;
+}
+
+.f-button{
+  display: none;
+} */
+
 .podlozka_cdek {
   /* background: #e7dbfd; */
   position: sticky;
@@ -5,7 +17,7 @@
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   top: -20px;
-  z-index: -98;
+  z-index: 5;
   
 
 }
@@ -28,7 +40,7 @@
 }
 
 .cdek_bg{
-  opacity: 0.2;
+  opacity: 0.15;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
     position: absolute;

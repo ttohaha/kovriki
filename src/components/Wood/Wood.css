@@ -1,7 +1,7 @@
 .podlozka_wood{
     position: sticky;
     top: -20px;
-    z-index: -96;
+    z-index: 9;
     background-color: #8d5be0;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
