@@ -10,7 +10,7 @@ import Fancybox from '../Fancybox/Fancybox';
 import img_cdek_car from '../../img/cdek_car.png'
 import img_bg_cdek from '../../img2/bg_sdek3.JPG'
 import img_cdek_cover1 from '../../img/cdek_cover1.png'
-import img_ihcover_cdek11 from '../../img2/ihcover_cdek1.png'
+import img_ihcover_cdek11 from '../../img2/ihcover_cdek11 — копия.png'
 import img_ihcover_cdek1 from '../../img2/ihcover_cdek11.png'
 import img_ihcover_cdek2 from '../../img2/ihcover_cdek2.png'
 import img_ihcover_cdek22 from '../../img2/ihcover_cdek2_2.png'
@@ -44,27 +44,27 @@ function Cdek() {
       }
     })
 
-    gsap.fromTo('.cdek_kovri_img2', {opacity:0,y:+500},{
-      opacity:1,
-      y:0,
-      scrollTrigger:{
-        trigger:'.cdek',
-        start:'center +900',
-        end:'+1350',
-        scrub:true,
-      }
-    })
+    // gsap.fromTo('.cdek_kovri_img2', {opacity:0,y:+500},{
+    //   opacity:1,
+    //   y:0,
+    //   scrollTrigger:{
+    //     trigger:'.cdek',
+    //     start:'center +900',
+    //     end:'+1350',
+    //     scrub:true,
+    //   }
+    // })
 
-    gsap.fromTo('.cdek_kovri_img1', {opacity:0,y:+500},{
-      opacity:1,
-      y:0,
-      scrollTrigger:{
-        trigger:'.cdek',
-        start:'center +900',
-        end:'+1425',
-        scrub:true,
-      }
-    })
+    // gsap.fromTo('.cdek_kovri_img1', {opacity:0,y:+500},{
+    //   opacity:1,
+    //   y:0,
+    //   scrollTrigger:{
+    //     trigger:'.cdek',
+    //     start:'center +900',
+    //     end:'+1425',
+    //     scrub:true,
+    //   }
+    // })
 
     gsap.fromTo('.cdek_doroga_car', {opacity:1,x:0},{
       opacity:0,
@@ -96,12 +96,12 @@ function Cdek() {
           <div className="cdek_kovri">
           <Fancybox>
             <a data-fancybox="gallery" href={img_ihcover_cdek1}>
-              <img src={img_ihcover_cdek1} alt="" className="cdek_kovri_img1 cdek_kovri_img"/>
+              <img src={img_ihcover_cdek11} alt="" className="cdek_kovri_img1 cdek_kovri_img"/>
             </a>
           </Fancybox>
           <Fancybox>
             <a data-fancybox="gallery" href={img_ihcover_cdek22}>
-              <img src={img_ihcover_cdek22} alt="" className="cdek_kovri_img2 cdek_kovri_img" />
+              <img src={img_ihcover_cdek2} alt="" className="cdek_kovri_img2 cdek_kovri_img" />
             </a>
           </Fancybox>
             {/* <img src={img_cdek_cover1} alt="" className="cdek_kovri_img3" /> */}

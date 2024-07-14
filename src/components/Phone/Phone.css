@@ -83,7 +83,7 @@
     justify-content: space-evenly;
     align-items: flex-end;
     flex-direction: column;
-    height: 200px;
+    height: 300px;
     margin: 0;
 }
 
@@ -94,8 +94,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
   }
 
   .Phone_example .phone_block_content a {
@@ -106,8 +106,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     color: #4d4d4d;
     transition: all 0.3s ease-in-out;
@@ -116,27 +116,28 @@
   .Phone_example .phone_block_content a img {
     position: relative;
     z-index: 1;
-    width: 45px;
-    height: 45px;
+    width: 70px;
+    height: 70px;
   }
 
 .Phone_example{
     position: sticky;
     /* display: block; */
     z-index: 20;
-    top: calc(100vh - 200px);
+    top: calc(100vh - 300px);
     left: 40px;
     right: 30px;
 }
 
 .Phone_block{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    top: calc(100vh - 300px);;
+    right: 0;
+    /* height: 100%;
+    width: 100%; */
     /* background-color: #000; */
-    /* opacity: 0.9; */
+    opacity: 0.95;
+    z-index: 40;
 }
 
 .phone_a_color1{
@@ -147,55 +148,99 @@
 }
 
 
-.tooltip1{
-    left: -90px;
+.Phone_example .phone_block_content .tooltip1{
+    left: -120px;
+    font-size: 20px;
 }
-.tooltip2{
-    left: -115px;
+.Phone_example .phone_block_content .tooltip2{
+    left: -150px;
+    font-size: 20px;
 }
 .Phone_example .phone_block_content:hover .tooltip1 {
-    left: -110px;
+    left: -140px;
 }
 .Phone_example .phone_block_content:hover .tooltip2 {
-    left: -135px;
+    left: -170px;
 }
 
 
 @media (max-width:750px){
     .Phone_example .phone_block_content a img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 
     .Phone_example .phone_block_content {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
     }
 
     .Phone_example .phone_block_content a {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
     }
+
+    .Phone_example .phone_block_content .tooltip1{
+      left: -110px;
+      font-size: 16px;
+  }
+  .Phone_example .phone_block_content .tooltip2{
+      left: -130px;
+      font-size: 16px;
+  }
+  .Phone_example .phone_block_content:hover .tooltip1 {
+      left: -120px;
+  }
+  .Phone_example .phone_block_content:hover .tooltip2 {
+      left: -140px;
+  }
+
+  .Phone_block{
+    position: fixed;
+    top: calc(100vh - 250px);
+  }
+  .Phone_example {
+    height: 250px;
+  }
 }
 
 @media (max-width:500px){
-    .Phone_example .phone_block_content a img {
-        width: 40px;
-        height: 40px;
-    }
+  .Phone_example .phone_block_content a img {
+    width: 40px;
+    height: 40px;
+  }
 
-    .Phone_example .phone_block_content {
-      width: 55px;
-      height: 55px;
-    }
+  .Phone_example .phone_block_content {
+    width: 60px;
+    height: 60px;
+  }
 
-    .Phone_example .phone_block_content a {
-      width: 55px;
-      height: 55px;
-    }
+  .Phone_example .phone_block_content a {
+    width: 60px;
+    height: 60px;
+  }
 
-    .Phone_example{
-        height: 150px;
-        top: calc(100vh - 150px);
-    }
+  .Phone_example .phone_block_content .tooltip1{
+    left: -110px;
+    font-size: 16px;
+  }
+  .Phone_example .phone_block_content .tooltip2{
+    left: -130px;
+    font-size: 16px;
+  }
+  .Phone_example .phone_block_content:hover .tooltip1 {
+    left: -120px;
+  }
+  .Phone_example .phone_block_content:hover .tooltip2 {
+    left: -140px;
+  }
+
+  .Phone_block{
+  position: fixed;
+  top: calc(100vh - 150px);
+  }
+  .Phone_example {
+    padding-right: 10px;
+  height: 150px;
+  }
 }

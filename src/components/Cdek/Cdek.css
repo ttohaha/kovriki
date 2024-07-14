@@ -92,7 +92,7 @@
 .cdek_kovri_img1{
   display: block;
   z-index: 4;
-  height: 15vw;
+  width: 15vw;
   position: absolute;
   bottom: 2.5vw;
   left:2.5vw;
@@ -101,7 +101,7 @@
 .cdek_kovri_img2{
   display: block;
   z-index: 4;
-  height: 15vw;
+  width: 15vw;
   position: absolute;
   bottom: 2.5vw;
   right:2.5vw;
@@ -129,13 +129,13 @@
 
 @media (max-width:1060px){
   .cdek_kovri_img1{
-    height: 27vh;
+    width: 27vw;
     bottom: 7vw;
   left:7vw;
   }
   
   .cdek_kovri_img2{
-    height: 27vh;
+    width: 27vw;
   bottom: 7vw;
   right:7vw;
   }
@@ -150,14 +150,39 @@
     width:40vw;
   } */
 
-  .cdek_kovri_img1{
-    height: 27vh;
+  /* .cdek_kovri_img1{
+    width: 27vw;
     
   }
   
   .cdek_kovri_img2{
-    height: 27vh;
+    width: 27vh;
     
+  } */
+  .cdek_text_block{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cdek_kovri{
+    height: 60vh;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+  }
+  .cdek_kovri_img1{
+    height: 27vw;
+    width: auto;
+    position: static;
+  }
+  
+  .cdek_kovri_img2{
+    height: 27vw;
+    width: auto;
+    position: static;
   }
 
   .cdek_text{

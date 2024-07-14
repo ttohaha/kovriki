@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<Loader/>}>
-        {/* <Phone/> */}
+        <Phone/>
         {/* <Navname/>
         <Nav2aboutus/> */}
         <div className="navbar">
