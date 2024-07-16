@@ -173,6 +173,10 @@
     .nawaboutus_picText{
         width: 20vw;
     }
+
+    .nawaboutus_text{
+        line-height: 1.8;
+    }
 }
 
 @media (max-width:450px){
