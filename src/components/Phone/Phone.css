@@ -87,8 +87,7 @@
     margin: 0;
 }
 
-  .Phone_example .phone_block_content {
-    /* margin: 0 10px; */
+  /* .Phone_example .phone_block_content {
     position: relative;
     display: flex;
     align-items: center;
@@ -96,9 +95,9 @@
     flex-direction: row-reverse;
     width: 100px;
     height: 100px;
-  }
+  } */
 
-  .Phone_example .phone_block_content a {
+  /* .Phone_example .phone_block_content a {
     position: absolute;
     top: 0;
     right: 0;
@@ -111,31 +110,27 @@
     border-radius: 50%;
     color: #4d4d4d;
     transition: all 0.3s ease-in-out;
-  }
+  } */
 
-  .Phone_example .phone_block_content a img {
+  /* .Phone_example .phone_block_content a img {
     position: relative;
     z-index: 1;
     width: 70px;
     height: 70px;
-  }
+  } */
 
 .Phone_example{
     position: sticky;
-    /* display: block; */
     z-index: 20;
-    top: calc(100vh - 300px);
+    /* top: calc(100vh - 300px);
     left: 40px;
-    right: 30px;
+    right: 30px; */
 }
 
 .Phone_block{
     position: fixed;
     top: calc(100vh - 300px);;
     right: 0;
-    /* height: 100%;
-    width: 100%; */
-    /* background-color: #000; */
     opacity: 0.95;
     z-index: 40;
 }
@@ -148,7 +143,7 @@
 }
 
 
-.Phone_example .phone_block_content .tooltip1{
+/* .Phone_example .phone_block_content .tooltip1{
     left: -120px;
     font-size: 20px;
 }
@@ -161,8 +156,45 @@
 }
 .Phone_example .phone_block_content:hover .tooltip2 {
     left: -170px;
+} */
+
+.Phone_example .phone_block_content a img {
+  width: 50px;
+  height: 50px;
 }
 
+.Phone_example .phone_block_content {
+width: 80px;
+height: 80px;
+}
+
+.Phone_example .phone_block_content a {
+width: 80px;
+height: 80px;
+}
+
+.Phone_example .phone_block_content .tooltip1{
+left: -110px;
+font-size: 16px;
+}
+.Phone_example .phone_block_content .tooltip2{
+left: -130px;
+font-size: 16px;
+}
+.Phone_example .phone_block_content:hover .tooltip1 {
+left: -120px;
+}
+.Phone_example .phone_block_content:hover .tooltip2 {
+left: -140px;
+}
+
+.Phone_block{
+position: fixed;
+top: calc(100vh - 250px);
+}
+.Phone_example {
+height: 250px;
+}
 
 @media (max-width:750px){
     .Phone_example .phone_block_content a img {
