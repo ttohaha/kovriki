@@ -43,6 +43,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 4.3vw;
+  cursor: pointer;
 }
 
 .price_comp {
@@ -109,10 +110,6 @@
   .price_comp_text {
     font-size: 6.5vw;
     margin: 0;
-  }
-
-  .price_comp_text {
-    /* margin: 60px 0; */
   }
 
   .price_comp_img1 {
