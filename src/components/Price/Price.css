@@ -7,7 +7,7 @@
   background: #e7dbfd;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  color: #7f42e1;
+  color: #7936e3;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -50,6 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .price_comp_img1 {
@@ -72,16 +73,16 @@
   z-index: -99;
 }
 
-@media (max-width: 800px) {
-  .price_comp {
-    /* height: auto; */
-    display: flex;
-    flex-direction: column;
-    padding-top: 25px;
+@media (max-width: 1000px) {
+  .price_comp_text {
+    font-size: 6vw;
   }
+}
 
+@media (max-width: 800px) {
   .price_comp_text {
     margin: 30px 0;
+    font-size: 6vw;
   }
 
   .price_comp_img1 {
@@ -97,8 +98,6 @@
 @media (max-width: 692px) {
   .price_comp {
     /* height: auto; */
-    /* display: flex;
-        flex-direction: column; */
     display: grid;
     grid-template-rows: 3fr 3fr 1fr;
     align-items: center;
@@ -108,7 +107,7 @@
   }
 
   .price_comp_text {
-    font-size: 5vw;
+    font-size: 6.5vw;
     margin: 0;
   }
 
@@ -126,7 +125,7 @@
 
 @media (max-width: 500px) {
   .price_comp_text {
-    font-size: 6vw;
+    font-size: 6.7vw;
   }
 }
 

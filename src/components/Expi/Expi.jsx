@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
+import Fancybox from '../Fancybox/Fancybox';
+
 import img_bg_expi1 from '../../img2/bg_expi.JPG'
 // import img_bg_expi2 from '../../img/bg_expi2.JPG'
 import img_expo_img1 from '../../img2/expo_img3.png'
@@ -35,8 +37,19 @@ function Expi() {
           <div className="expi_main">
               <div className="expi_textiscrol">
                 <div className="expi_scrol">
-                  <img src={img_expo_img1} alt="" className="expi_img expi_img2" />
-                  <img src={img_expo_img2} alt="" className="expi_img expi_img1" />
+                  {/* <img src={img_expo_img1} alt="" className="expi_img expi_img2" />
+                  
+                  <img src={img_expo_img2} alt="" className="expi_img expi_img1" /> */}
+                  <Fancybox>
+                    <a data-fancybox="gallery" href={img_expo_img1}>
+                      <img src={img_expo_img1} alt="" className="expi_img expi_img2"/>
+                    </a>
+                  </Fancybox>
+                  <Fancybox>
+                    <a data-fancybox="gallery" href={img_expo_img2}>
+                      <img src={img_expo_img2} alt="" className="expi_img expi_img1"/>
+                    </a>
+                  </Fancybox>
                 </div>
                 <div className="expi_text">И коврик для мыши большого размера,<br/>Планшеты, плейсматы и даже ланчмат<br/>Мы всё напечатаем - с нами опыт и вера!<br/>Скажи лишь, какой тираж и формат.</div>
               </div>

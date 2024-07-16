@@ -25,7 +25,7 @@ function Nawaboutus() {
         </div>
         
         <div className="nawaboutus_text_box">
-            <div className="nawaboutus_text">Нет лучше подарка, чем коврик для мыши!<br/> Реклама на нем всегда под рукой.<br/> Как Пушкин придумаем, как Пикассо напишем-<br/> никто вам не сделает коврик такой!</div>
+            <div className="nawaboutus_text">Нет лучше подарка, чем коврик для мыши!<br/> Реклама на нем всегда под рукой.<br/> Как Пушкин придумаем, как Пикассо напишем-<br/> Никто вам не сделает коврик такой!</div>
         </div>
 
         <div className="nawaboutus_kartinas2 nawaboutus_kartinas">

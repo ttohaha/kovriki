@@ -96,12 +96,12 @@ function Cdek() {
           <div className="cdek_kovri">
           <Fancybox>
             <a data-fancybox="gallery" href={img_ihcover_cdek1}>
-              <img src={img_ihcover_cdek11} alt="" className="cdek_kovri_img1 cdek_kovri_img"/>
+              <img src={img_ihcover_cdek1} alt="" className="cdek_kovri_img1 cdek_kovri_img"/>
             </a>
           </Fancybox>
           <Fancybox>
             <a data-fancybox="gallery" href={img_ihcover_cdek22}>
-              <img src={img_ihcover_cdek2} alt="" className="cdek_kovri_img2 cdek_kovri_img" />
+              <img src={img_ihcover_cdek22} alt="" className="cdek_kovri_img2 cdek_kovri_img" />
             </a>
           </Fancybox>
             {/* <img src={img_cdek_cover1} alt="" className="cdek_kovri_img3" /> */}

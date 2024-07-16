@@ -37,7 +37,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: 3vw;
-  color:#e7dbfd;
+  /* color:#e7dbfd; */
+  color:white;
   position: absolute;
 }
 
@@ -89,7 +90,7 @@
         object-position: center;
 }
 
-@media (max-width:1150px){
+@media (max-width:1350px){
     .nawaboutus_pusAvtor{
         width: 18vw;
     }
@@ -118,7 +119,7 @@
     }
 
     .nawaboutus_text{
-        font-size: 4.8vw;
+        font-size: 5.3vw;
     }
     .nawaboutus_kartinas2{
         right: 6vw;
@@ -176,7 +177,7 @@
 
 @media (max-width:450px){
     .nawaboutus_text{
-        font-size: 5.3vw;
+        font-size: 5.4vw;
     }
 
     .nawaboutus_kartinas2{
