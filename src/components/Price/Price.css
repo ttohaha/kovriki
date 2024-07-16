@@ -43,7 +43,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 4.3vw;
-  cursor: pointer;
+  cursor: default;
 }
 
 .price_comp {

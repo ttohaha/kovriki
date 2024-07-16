@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    cursor: pointer;
+    cursor: default;
 }
 
 .call_text_flex{
