@@ -19,7 +19,7 @@
 
 .navname_block_phone{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
 }
@@ -57,15 +57,36 @@
     content: 'Loading';
 }
 
+.navname_block_phone1_done{
+    display: none;
+}
+
+
+@media (max-width:1050px){
+    .navname_block_donetext{
+        display: none;
+    }
+    .navname_block_phone1_done{
+        display: flex;
+    }
+}
 @media (max-width:840px){
     .navname{
         height: 150px;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+
+    .navname_block_donetext{
+        display: flex;
+    }
+    .navname_block_phone1_done{
+        display: none;
     }
 }
 
-@media (max-width:840px){
+@media (max-width:420px){
     .navname{
         font-size: 25px;
     }
