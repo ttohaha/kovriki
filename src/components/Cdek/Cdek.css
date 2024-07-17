@@ -246,5 +246,11 @@
 }
 }
 
+@media screen and (max-width: 500px) {
+  .cdek_kovri_img2{
+    transform: translate(0, -30px);
+  }
+}
+
 /* # */
 /* #F4EBD9 */
