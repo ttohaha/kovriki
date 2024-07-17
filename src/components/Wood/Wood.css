@@ -42,7 +42,8 @@
   .wood_text{
     color:white;
     font-family: "Great Vibes", cursive;
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: bolder;
     font-style: normal;
     cursor: default;
   
