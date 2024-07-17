@@ -31,7 +31,12 @@ ul {
 
 .navbar{
     position: sticky;
-    top:-80px;
+    top:-100px;
     z-index: 2;
 }
 
+@media (max-width:840px){
+    .navbar{
+        top:-150px;
+    }
+}

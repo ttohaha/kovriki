@@ -4,13 +4,85 @@
     /* font-family: TTNorms, sans-serif; */
     line-height: 30px;
     width:100%;
-    height:80px;
+    height:100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    font-family: "Nunito", sans-serif;
+
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
 }
 
-.navname_text{
+.navname_block_phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.navname_block_phone1{
+    text-decoration: none;
+    color: #e7dbfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navname_block_phone2{
+    text-decoration: none;
+    color: #e7dbfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navname_block_phone3{
+    /* cursor: default; */
+    text-decoration: none;
+    color: #e7dbfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navname_img{
+    width: 30px;
+    margin: 5px 10px 5px 0;
+}
+
+.navname_number{
+    content: 'Loading';
+}
+
+@media (max-width:840px){
+    .navname{
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:840px){
+    .navname{
+        font-size: 25px;
+    }
+}
+
+/* .navname_number{
+    display: inline-block;
+    font-optical-sizing: auto;
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+} */
+
+
+
+/* .navname_text{
     display: inline-block;
     font-size: 40px;
     font-weight: bolder;
@@ -19,7 +91,7 @@
     font-weight: 900;
     font-style: normal;
     cursor: default;
-}
+} */
 
 /* .navname_text{
     display: inline-block;

@@ -139,10 +139,8 @@
     }
 
     .call_text_flex{
-        /* font-size: 6.5vw; */
-        font-size: 8vw;
-        /* line-height: 1.6; */
-        line-height: 1;
+        font-size: 6.5vw;
+        line-height: 1.6;
     }
 }
 
