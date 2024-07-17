@@ -31,7 +31,7 @@ function Navname() {
         <div className="navname_email">kovriki2005@mail.ru</div>
       </div> */}
 
-      <a className='navname_block_phone3' href="mailto:loboda.toni@internet.ru">
+      <a className='navname_block_phone3' href="mailto:loboda.toni@internet.ru" target='blank'>
         <img src={phone_mail_img} alt="" className="navname_img" />
         <div className="navname_email">kovriki2005@mail.ru</div>
       </a>
