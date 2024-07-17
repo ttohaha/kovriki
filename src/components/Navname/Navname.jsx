@@ -22,7 +22,7 @@ function Navname() {
 
         <a className='navname_block_phone2' href="http://wa.me/89660956060" target='blank'>
           <img src={whatsapp_img} alt="" className="navname_img" />
-          <div className="navname_number">Напимать в Watsapp</div>
+          <div className="navname_number">Написать в Watsapp</div>
         </a>
       </div>
 
