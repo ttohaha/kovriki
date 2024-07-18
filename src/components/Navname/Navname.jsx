@@ -49,12 +49,12 @@ function Navname() {
 
          if(window.scrollY>100 && position > moving){
           setVisiblefirst(moving)
-          setVisible(visiblelast-moving>=100 ? true : false)
+          setVisible(visiblelast-moving>=150 ? true : false)
          }else{
           setVisible(false)
           setVisiblelast(moving)
 
-          if(moving-visiblefirst<=20 && visible===true){
+          if(moving-visiblefirst<=50 && visible===true){
             setVisible(true)
           }else{
             setVisible(false)
