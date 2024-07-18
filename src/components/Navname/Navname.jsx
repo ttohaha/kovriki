@@ -42,19 +42,28 @@ function Navname() {
   const [position, setPosition] = useState(window.pageYOffset)
   const [visible, setVisible] = useState(true) 
   const [visiblelast, setVisiblelast] = useState(window.pageYOffset) 
+  const [visiblefirst, setVisiblefirst] = useState(window.pageYOffset) 
   useEffect(()=> {
       const handleScroll = () => {
          let moving = window.pageYOffset
-        //  setVisible(position > moving);
+
          if(window.scrollY>100 && position > moving){
-          // setVisible(true)
-          setVisible(visiblelast-moving>=100 ? true : false)
+          setVisiblefirst(moving)
+          setVisible(visiblelast-moving>=50 ? true : false)
          }else{
           setVisible(false)
-          setVisiblelast(window.pageYOffset)
+          setVisiblelast(moving)
+
+          if(moving-visiblefirst<=20 && visible===true){
+            setVisible(true)
+          }else{
+            setVisible(false)
+          }
+
          }
+         
          setPosition(moving)
-      };
+      }
       window.addEventListener("scroll", handleScroll);
       return(() => {
          window.removeEventListener("scroll", handleScroll);
