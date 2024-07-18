@@ -42,7 +42,7 @@ function Navname() {
   const [position, setPosition] = useState(window.pageYOffset)
   const [visible, setVisible] = useState(true) 
   const [visiblelast, setVisiblelast] = useState(window.pageYOffset) 
-  const [visiblefirst, setVisiblefirst] = useState(window.pageYOffset) 
+  const [visiblefirst, setVisiblefirst] = useState(-20) 
   useEffect(()=> {
       const handleScroll = () => {
          let moving = window.pageYOffset
@@ -54,7 +54,7 @@ function Navname() {
           setVisible(false)
           setVisiblelast(moving)
 
-          if(moving-visiblefirst<=50 && visible===true){
+          if(moving-visiblefirst<=20 && visible===true){
             setVisible(true)
           }else{
             setVisible(false)
