@@ -1,4 +1,4 @@
-import React from 'react'
+import {useEffect, useState} from 'react'
 
 import './Navname.css';
 import whatsapp_img from '../../img2/watsapp2.png'
@@ -11,9 +11,63 @@ import phone_mail_img from '../../img2/mail.png'
 //   )
 // }
 
+
+
+
+// const header = document.querySelector('header');
+// let lastScroll = 0;
+
+// window.addEventListener("scroll", () => {
+//   const currentScroll = window.pageYOffset;
+//   if (currentScroll <= 0) {
+//     if (header.classList.contains('_header-scroll')) { 
+//       header.classList.remove('_header-scroll');
+//     }
+//     return;
+//   }
+
+//   if (currentScroll > lastScroll) {
+//     if (!header.classList.contains('_header-scroll')) {
+//       header.classList.add('_header-scroll');
+//     }
+//   } else if (currentScroll < lastScroll) {
+//     if (header.classList.contains('_header-scroll')) {
+//       header.classList.remove('_header-scroll');
+//     }
+//   }
+//   lastScroll = currentScroll;
+// });
+
 function Navname() {
+  const [position, setPosition] = useState(window.pageYOffset)
+  const [visible, setVisible] = useState(true) 
+  useEffect(()=> {
+      const handleScroll = () => {
+         let moving = window.pageYOffset
+        //  setVisible(position > moving);
+         if(window.scrollY>100 && position > moving){
+          setVisible(true)
+         }else{
+          setVisible(false)
+         }
+         setPosition(moving)
+      };
+      window.addEventListener("scroll", handleScroll);
+      return(() => {
+         window.removeEventListener("scroll", handleScroll);
+      })
+  })
+
+  let cls = ''
+  if(window.innerWidth<=840){
+    cls = visible ? "0px" : "-150px";
+  }else{
+    cls = visible ? "0px" : "-100px";
+  }
+
+
   return (
-    <div className='navname'>
+    <div className='navname' style={{top:`${cls}`}}>
       <div className="navname_block_phone navname_block_phone1_done">
         <a className='navname_block_phone1' href="tel:+375295008097">
           <img src={phone_call_img} alt="" className="navname_img" />

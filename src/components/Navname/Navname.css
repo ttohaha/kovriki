@@ -15,6 +15,12 @@
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
+  transition: top 0.6s ease-out;
+
+  position: sticky;
+    top:-80;
+    left:0;
+    z-index: 200;
 }
 
 .navname_block_phone{

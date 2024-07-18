@@ -30,8 +30,9 @@ function App() {
         {/* <Phone/> */}
         {/* <Navname/>
         <Nav2aboutus/> */}
+        <Navname/>
         <div className="navbar">
-            <Navname/>
+            
             <Nawaboutus/>
         </div>
         <Price/>
