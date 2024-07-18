@@ -41,14 +41,17 @@ import phone_mail_img from '../../img2/mail.png'
 function Navname() {
   const [position, setPosition] = useState(window.pageYOffset)
   const [visible, setVisible] = useState(true) 
+  const [visiblelast, setVisiblelast] = useState(window.pageYOffset) 
   useEffect(()=> {
       const handleScroll = () => {
          let moving = window.pageYOffset
         //  setVisible(position > moving);
          if(window.scrollY>100 && position > moving){
-          setVisible(true)
+          // setVisible(true)
+          setVisible(visiblelast-moving>=100 ? true : false)
          }else{
           setVisible(false)
+          setVisiblelast(window.pageYOffset)
          }
          setPosition(moving)
       };
