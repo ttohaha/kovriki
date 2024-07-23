@@ -191,3 +191,10 @@
         width: 70vw;
     }
 }
+
+
+@media screen and (max-width: 500px) {
+    .expi_picture{
+      transform: translate(0, -30px);
+    }
+  }

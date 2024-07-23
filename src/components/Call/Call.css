@@ -1,8 +1,9 @@
 .podlozka_call{
     position: sticky;
     top: -20px;
-    z-index: 8;
-    background-color: #e7dbfd;
+    z-index: 9;
+    background-color: #7936e3;
+    /* background-color: #e7dbfd; */
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
 }
@@ -45,7 +46,8 @@
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
-  color: #7936e3;
+  color: #e7dbfd;
+  /* color: #7936e3; */
   /* color: white; */
   font-size: 4.5vw;
 }

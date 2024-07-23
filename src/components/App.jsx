@@ -39,8 +39,8 @@ function App() {
         <Cdek/>
         <Evro/>
         <Expi/>
-        <Call/> 
         <Wood/>
+        <Call/> 
       </Suspense>
     </div>
   )
