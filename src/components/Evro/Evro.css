@@ -1,3 +1,63 @@
+.evro_img_slide_pict{
+    width:35vw;
+    height:32vw;
+    position: relative;
+}
+
+.evro_slider{
+    width:35vw;
+    height:32vw;
+}
+
+.evro_slid{
+    width: 35vw;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    width: 35vw;
+    height: 32vw;
+    margin: 0;
+    
+}
+
+.swiper-slide{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.evro_slide_text{
+    color: #7f42e1;
+    margin: 0;
+    font-size: 3vw;
+    /* position: absolute; */
+    top: 0;
+    cursor: default;
+}
+
+.evro_slide_text_pdf{
+    display: flex;
+}
+.evro_slide_text_pdf__{
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+/* dfswgjajkljgagghggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
+
+
 .podlozka_evro{
   position: sticky;
   top: -20px;
@@ -5,9 +65,6 @@
   background-color: #e7dbfd;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  
-
-  
 }
 
 .evro_zzz{
@@ -15,7 +72,6 @@
     top: -20px;
   z-index:6;
     background-color: #7f42e1;
-    
 }
 
 .evro{ 
@@ -61,6 +117,11 @@
 
 .evro_img_pictire{
     width: 35vw;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    /* opacity: 0; */
+    /* display: none; */
 }
 
 .evro_text{
@@ -83,6 +144,19 @@
 }
 
 @media (max-width:1100px){
+    .evro_img_slide_pict{
+        width:40vw;
+    }
+    .evro_slider{
+        width:40vw;
+    }
+    .evro_slid{
+        width:40vw;
+    }
+    .swiper {
+        width: 40vw;
+    }
+    
     .evro_img_car{
         width: 25vw;
     }
@@ -110,6 +184,19 @@
     .evro_img_pictire{
         width: 40vw;
     }
+
+    .evro_img_slide_pict{
+        width:40vw;
+    }
+    .evro_slider{
+        width:40vw;
+    }
+    .evro_slid{
+        width:40vw;
+    }
+    .swiper {
+        width: 40vw;
+    }
 }
 
 @media (max-width:750px){
@@ -117,7 +204,7 @@
         display: grid;
         grid-template-rows: 5fr 3fr;
         justify-items: center;
-        align-items: center;
+        align-items: start;
     }
 
     .evro_img_car{
@@ -154,15 +241,40 @@
     .evro_img_pictire{
         width: 55vw;
     }
+
+    .evro_img_slide_pict{
+        width:55vw;
+        height: auto;
+    }
+    .evro_slider{
+        width:55vw;
+        height: auto;
+    }
+    .evro_slid{
+        width:55vw;
+        height: auto;
+    }
+    .swiper {
+        width: 55vw;
+        height: auto;
+    }
+
+    .evro_img_slide_pict{
+        transform: translate(0, 5vw);
+    }
+
+    .evro_slide_text{
+        font-size: 4vw;
+    }
 }
 
 @media (max-width:560px){
-    .evro_imgtext{
+    /* .evro_imgtext{
         display: grid;
         grid-template-rows: 5fr 3fr 2fr;
         justify-items: center;
         align-items: center;
-    }
+    } */
 
     .evro_text_mobile{
         font-size: 6.6vw;
@@ -173,6 +285,9 @@
         width: 30vw;
     }
     
+    .evro_slide_text{
+        font-size: 5vw;
+    }
 }
 
 @media (max-width:445px){
@@ -181,7 +296,7 @@
     }
 }
 
-@media screen and (min-height:843px) and (max-width:550px){
+/* @media screen and (min-height:843px) and (max-width:550px){
     .evro_img_cover_mobile{
         display: block;
         width: 40vw;
@@ -190,7 +305,20 @@
     .evro_img_pictire{
         width: 70vw;
     }
-}
+
+    .evro_img_slide_pict{
+        width:70vw;
+    }
+    .evro_slider{
+        width:70vw;
+    }
+    .evro_slid{
+        width:70vw;
+    }
+    .swiper {
+        width: 70vw;
+    }
+} */
 
 
 @media screen and (max-width: 500px) {
