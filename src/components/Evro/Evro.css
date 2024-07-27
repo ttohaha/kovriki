@@ -294,6 +294,9 @@
     .evro_imgtext{
         grid-template-rows: 4fr 4fr 2fr;
     }
+    .evro_img_slide_pict{
+        transform: translate(0, 8vw);
+    }
 }
 
 /* @media screen and (min-height:843px) and (max-width:550px){
@@ -324,5 +327,8 @@
 @media screen and (max-width: 500px) {
     .expi_picture{
       transform: translate(0, -30px);
+    }
+    .evro_img_slide_pict{
+        transform: translate(0, 15vw);
     }
   }
