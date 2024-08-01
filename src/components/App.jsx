@@ -24,6 +24,7 @@ const Wood = lazy(()=> import('./Wood/Wood'))
 
 function App() {
 
+  // console.log(document.body.classList.add('modal-open'));
   return (
     <div className="App">
       <Suspense fallback={<Loader/>}>

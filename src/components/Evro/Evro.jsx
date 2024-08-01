@@ -188,7 +188,7 @@ useEffect(()=>{
                     <img src={img_evro_pictire} alt="" className="evro_img_pictire" />
                     <Swiper
                       autoplay={{
-                        delay: 5000,
+                        delay: 2500,
                       }}
                       // pagination={{
                       //   clickable: true,

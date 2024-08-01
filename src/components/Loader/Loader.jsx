@@ -1,16 +1,14 @@
-import React from 'react'
+import {React, lazy, Suspense} from 'react'
 
 import './Loader.css'
 import Navname from '../Navname/Navname'
-
-
 
 function Loader() {
   return (
     <>
         <Navname/>
         <div className="loader_main">
-        <span class="loader"></span>
+        <span className="loader"></span>
 
         </div>
     </>

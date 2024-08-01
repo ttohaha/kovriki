@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: white;
     /* font: 1em "Fira Sans", sans-serif; */
+    
 }
 
 .none{
@@ -35,6 +36,8 @@ ul {
     top:0;
     z-index: 2;
 }
+
+
 
 /* @media (max-width:840px){
     .navbar{
