@@ -26,23 +26,28 @@ function App() {
 
   // console.log(document.body.classList.add('modal-open'));
   return (
-    <div className="App">
-      <Suspense fallback={<Loader/>}>
-        {/* <Phone/> */}
-        {/* <Navname/>
-        <Nav2aboutus/> */}
-        <Navname/>
-        <div className="navbar">
+    // <div className="App">
+    //   <Suspense fallback={<Loader/>}>
+    //     {/* <Phone/> */}
+    //     {/* <Navname/>
+    //     <Nav2aboutus/> */}
+    //     <Navname/>
+    //     <div className="navbar">
             
-            <Nawaboutus/>
-        </div>
-        <Price/>
-        <Cdek/>
-        <Evro/>
-        <Expi/>
-        <Wood/>
-        <Call/> 
-      </Suspense>
+    //         <Nawaboutus/>
+    //     </div>
+    //     <Price/>
+    //     <Cdek/>
+    //     <Evro/>
+    //     <Expi/>
+    //     <Wood/>
+    //     <Call/> 
+    //   </Suspense>
+    // </div>
+    <div className="vercel" >
+      <div className="vercel_text">
+        К сожалению время бесплатного хостинга закончилось &#129402; 
+      </div>
     </div>
   )
 }

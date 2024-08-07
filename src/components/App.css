@@ -44,3 +44,19 @@ ul {
         top:-150px;
     }
 } */
+
+
+.vercel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color:  rgb(14 14 14);
+    color:white;
+}
+
+.vercel_text{
+    font-size: 5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
