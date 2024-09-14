@@ -1,6 +1,7 @@
 import {React, lazy, Suspense} from 'react'
 
 import './App.css';import Loader from './Loader/Loader';
+import TypingText from './DELETE/TypingText';
 
 // import Navname from './Navname/Navname';
 // import Nawaboutus from './Nawaboutus/Nawaboutus';
@@ -14,6 +15,7 @@ import './App.css';import Loader from './Loader/Loader';
 
 const Navname = lazy(()=> import('./Navname/Navname'))
 const Nawaboutus = lazy(()=> import('./Nawaboutus/Nawaboutus'))
+const Nav2aboutus = lazy(()=> import('./Nav2aboutus/Nav2aboutus'))
 const Price = lazy(()=> import('./Price/Price'))
 const Cdek = lazy(()=> import('./Cdek/Cdek'))
 const Evro = lazy(()=> import('./Evro/Evro'))
@@ -26,29 +28,31 @@ function App() {
 
   // console.log(document.body.classList.add('modal-open'));
   return (
-    // <div className="App">
-    //   <Suspense fallback={<Loader/>}>
-    //     {/* <Phone/> */}
-    //     {/* <Navname/>
-    //     <Nav2aboutus/> */}
-    //     <Navname/>
-    //     <div className="navbar">
+    <div className="App">
+      <Suspense fallback={<Loader/>}>
+        {/* <Phone/> */}
+        <Navname/>
+        <Nav2aboutus/>
+        {/* <Navname/> */}
+        {/* <div className="navbar">
             
-    //         <Nawaboutus/>
-    //     </div>
-    //     <Price/>
-    //     <Cdek/>
-    //     <Evro/>
-    //     <Expi/>
-    //     <Wood/>
-    //     <Call/> 
-    //   </Suspense>
-    // </div>
-    <div className="vercel" >
-      <div className="vercel_text">
-        К сожалению время бесплатного хостинга закончилось &#129402; 
-      </div>
+            <Nawaboutus/>
+        </div> */}
+        <Price/>
+        <Cdek/>
+        <Evro/>
+        <Expi/>
+        <Wood/>
+        <Call/> 
+      </Suspense>
     </div>
+
+    // <div className="vercel" >
+    //   <div className="vercel_text">
+    //     {/* К сожалению время бесплатного хостинга закончилось &#129402;  */}
+    //     <TypingText startText='Hello' endText='Hello world...' deleteSpead='75' typeSpead='225'/>
+    //   </div>
+    // </div>
   )
 }
 

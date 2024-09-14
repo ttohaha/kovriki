@@ -33,12 +33,13 @@
 
 .nav2_text{
     color: #e7dbfd;
-    font-family: "Comfortaa", sans-serif;
+    /* font-family: "Comfortaa", sans-serif; */
+    font-family: "Great Vibes", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.7vw;
-    line-height: 2;
+    font-size: 2.9vw;
+    line-height: 1.5;
     cursor: default;
 }
 
@@ -60,7 +61,7 @@
     }
 
     .nav2_text{
-        font-size: 2.2vw;
+        font-size: 3.5vw;
 
     }
 }
@@ -71,19 +72,12 @@
     }
 
     .nav2_text{
-        font-size: 2.5vw;
+        font-size: 4vw;
 
     }
 }
 
-@media (max-width:860px){
-    .nav2_text{
-        font-size: 3vw;
-
-    }
-}
-
-@media (max-width:560px){
+@media (max-width:600px){
     .nav2_img1{
         width: 65vw;
     }
@@ -97,12 +91,12 @@
     }
 
     .nav2_text{
-        font-size: 3.3vw;
+        font-size: 5vw;
     }
 }
 
 @media (max-width:420px){
     .nav2_text{
-        line-height: 2.5;
+        line-height: 2;
     }
 }
