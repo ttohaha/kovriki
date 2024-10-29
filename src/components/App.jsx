@@ -31,13 +31,13 @@ function App() {
     <div className="App">
       <Suspense fallback={<Loader/>}>
         {/* <Phone/> */}
+        {/* <Navname/>
+        <Nav2aboutus/> */}
         <Navname/>
-        <Nav2aboutus/>
-        {/* <Navname/> */}
-        {/* <div className="navbar">
+        <div className="navbar">
             
             <Nawaboutus/>
-        </div> */}
+        </div>
         <Price/>
         <Cdek/>
         <Evro/>
