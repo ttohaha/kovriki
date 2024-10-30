@@ -8,9 +8,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import './Nawaboutus.css'
-import img_picAvtor from '../../img2/picAvtor.png'
+import img_picAvtor from '../../img2/picAvtor_last.png'
 import img_picText from '../../img2/picText.png'
-import img_pusAvtor from '../../img2/pusAvtor4.png'
+import img_pusAvtor from '../../img2/pusAvtor_last.png'
 import img_pusText from '../../img2/pusText.png'
 import img_backNav from '../../img2/backheader.JPG'
 import img_nav2img from '../../img/nav2img.JPG'

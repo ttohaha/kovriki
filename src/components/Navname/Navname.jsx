@@ -39,54 +39,55 @@ import phone_mail_img from '../../img2/mail.png'
 // });
 
 function Navname() {
-  const [position, setPosition] = useState(window.pageYOffset)
-  const [visible, setVisible] = useState(true) 
-  const [visiblelast, setVisiblelast] = useState(window.pageYOffset) 
-  const [visiblefirst, setVisiblefirst] = useState(-20) 
-  useEffect(()=> {
-      const handleScroll = () => {
-         let moving = window.pageYOffset
+  // const [position, setPosition] = useState(window.pageYOffset)
+  // const [visible, setVisible] = useState(true) 
+  // const [visiblelast, setVisiblelast] = useState(window.pageYOffset) 
+  // const [visiblefirst, setVisiblefirst] = useState(-20) 
+  // useEffect(()=> {
+  //     const handleScroll = () => {
+  //        let moving = window.pageYOffset
 
-         if(window.scrollY>100 && position > moving){
-          setVisiblefirst(moving)
-          setVisible(visiblelast-moving>=150 ? true : false)
-         }else{
-          setVisible(false)
-          setVisiblelast(moving)
+  //        if(window.scrollY>100 && position > moving){
+  //         setVisiblefirst(moving)
+  //         setVisible(visiblelast-moving>=150 ? true : false)
+  //        }else{
+  //         setVisible(false)
+  //         setVisiblelast(moving)
 
-          if(moving-visiblefirst<=20 && visible===true){
-            setVisible(true)
-          }else{
-            setVisible(false)
-          }
+  //         if(moving-visiblefirst<=20 && visible===true){
+  //           setVisible(true)
+  //         }else{
+  //           setVisible(false)
+  //         }
 
-         }
+  //        }
          
-         setPosition(moving)
-      }
-      window.addEventListener("scroll", handleScroll);
-      return(() => {
-         window.removeEventListener("scroll", handleScroll);
-      })
-  })
+  //        setPosition(moving)
+  //     }
+  //     window.addEventListener("scroll", handleScroll);
+  //     return(() => {
+  //        window.removeEventListener("scroll", handleScroll);
+  //     })
+  // })
 
-  let cls = ''
-  if(window.innerWidth<=840){
-    cls = visible ? "0px" : "-150px";
-  }else{
-    cls = visible ? "0px" : "-100px";
-  }
+  // let cls = ''
+  // if(window.innerWidth<=840){
+  //   cls = visible ? "0px" : "-150px";
+  // }else{
+  //   cls = visible ? "0px" : "-100px";
+  // }
 
 
   return (
-    <div className='navname' style={{top:`${cls}`}}>
+    // <div className='navname' style={{top:`${cls}`}}>
+    <div className='navname'>
       <div className="navname_block_phone navname_block_phone1_done">
-        <a className='navname_block_phone1' href="tel:+375295008097">
+        <a className='navname_block_phone1' href="tel:+79637113738">
           <img src={phone_call_img} alt="" className="navname_img" />
-          <div className="navname_number">+89637113738</div>
+          <div className="navname_number">+79637113738</div>
         </a>
 
-        <a className='navname_block_phone2' href="http://wa.me/89660956060" target='blank'>
+        <a className='navname_block_phone2' href="http://wa.me/79660956060" target='blank'>
           <img src={whatsapp_img} alt="" className="navname_img" />
           <div className="navname_number">Написать в Watsapp</div>
         </a>
@@ -94,7 +95,7 @@ function Navname() {
 
 
 
-        <a className='navname_block_phone2 navname_block_donetext' href="http://wa.me/89660956060" target='blank'>
+        <a className='navname_block_phone2 navname_block_donetext' href="http://wa.me/79660956060" target='blank'>
           <img src={whatsapp_img} alt="" className="navname_img" />
           <div className="navname_number">Написать в Watsapp</div>
         </a>
@@ -104,9 +105,9 @@ function Navname() {
         <div className="navname_email">kovriki2005@mail.ru</div>
       </a>
 
-        <a className='navname_block_phone1 navname_block_donetext' href="tel:+375295008097">
+        <a className='navname_block_phone1 navname_block_donetext' href="tel:+79637113738">
           <img src={phone_call_img} alt="" className="navname_img" />
-          <div className="navname_number">+89637113738</div>
+          <div className="navname_number">+79637113738</div>
         </a>
     </div>
   )
