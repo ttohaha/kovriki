@@ -12,8 +12,10 @@ import img_expo_img1 from '../../img2/expo_img3.png'
 import img_expo_img2 from '../../img2/expo_img4.png'
 import img_expi_picture from '../../img2/evro_pictire.png'
 
-import img_cover_info1 from '../../img2/cover_info1.png'
-import img_cover_info1_back from '../../img2/cover_info1_back.png'
+import img_cover_info2 from '../../img2/cover_info2.png'
+import img_cover_info2_back from '../../img2/cover_info2_back.png'
+import img_cover_info3 from '../../img2/cover_info3.png'
+import img_cover_info3_back from '../../img2/cover_info3_front.png'
 
 import './Expi.css'
 
@@ -40,21 +42,21 @@ function Expi() {
           <div className="expi_main">
               <div className="expi_textiscrol">
                 <div className="expi_scrol">
-                  {/* <Fancybox>
-                    <a data-fancybox="gallery" href={img_expo_img1}>
-                      <img src={img_expo_img1} alt="" className="expi_img expi_img2"/>
+                  <Fancybox>
+                    <a data-fancybox="gallery" href={img_cover_info2}>
+                      <img src={img_cover_info2_back} alt="" className="expi_img expi_img2"/>
                     </a>
                   </Fancybox>
                   <Fancybox>
-                    <a data-fancybox="gallery" href={img_expo_img2}>
-                      <img src={img_expo_img2} alt="" className="expi_img expi_img1"/>
+                    <a data-fancybox="gallery" href={img_cover_info3}>
+                      <img src={img_cover_info3_back} alt="" className="expi_img expi_img1"/>
                     </a>
-                  </Fancybox> */}
-                  <Fancybox>
+                  </Fancybox>
+                  {/* <Fancybox>
                     <a data-fancybox="gallery" href={img_cover_info1_back}>
                       <img src={img_cover_info1_back} alt="" className="expi_img expi_img1"/>
                     </a>
-                  </Fancybox>
+                  </Fancybox> */}
                 </div>
                 <div className="expi_text">И коврик для мыши большого размера,<br/>Планшеты, плейсматы и даже ланчмат<br/>Мы всё напечатаем - с нами опыт и вера!<br/>Скажи лишь, какой тираж и формат.</div>
               </div>

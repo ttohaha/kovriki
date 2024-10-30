@@ -67,8 +67,8 @@
 
 .expi_img{
   /* border-radius: 20px; !!!!!!!!!!!*/
-  /* width: 20vw; */
-  width:36vw;
+  width: 20vw;
+  /* width:36vw; */
 }
 
 @media (max-width:1000px){
@@ -113,8 +113,8 @@
 
 @media (max-width:600px){
   .expi_img{
-    /* width: 30vw; */
-    width: 50vw;
+    width: 30vw;
+    /* width: 50vw; */
   }
 
   .expi_text{
@@ -129,8 +129,8 @@
 
 @media (max-width:480px){
   .expi_img{
-    /* width: 35vw; */
-    width: 75vw;
+    width: 35vw;
+    /* width: 75vw; */
   }
 
   .expi_picture{
